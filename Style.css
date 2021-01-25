@@ -1,0 +1,13 @@
+body
+{
+    font-family: 'Raleway', sans-serif;
+}
+nav
+{
+    list-style-type: none;
+}
+.logo
+{
+    max-width: 7%;
+    height: auto;
+}
