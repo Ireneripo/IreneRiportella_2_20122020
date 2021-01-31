@@ -1,13 +1,48 @@
 body
 {
     font-family: 'Raleway', sans-serif;
+    margin: 30px 20px;
 }
-nav
+nav ul
 {
     list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 2em;
+}
+nav ul li a:hover
+{
+    font-weight: bolder;
+}
+nav ul li a:hover
+{
+    display: inline-block;
+    position: relative;
+    color: #0165FC;
+    text-decoration: none;
+}
+nav ul li a:after 
+{
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    transition: all .3s;
+}
+nav ul li a:hover:after 
+{
+    width: 100%;
+    background: #0165FC;
+}
+nav ul li a
+{
+    text-decoration: none;
+    padding: 0 30px;
 }
 .logo
 {
     max-width: 7%;
     height: auto;
+    float: left;
 }
