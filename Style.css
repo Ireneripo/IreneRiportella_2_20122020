@@ -1,63 +1,179 @@
 body
 {
     font-family: 'Raleway', sans-serif;
-    margin: 30px 20px;
+    margin-top: 0;
 }
+header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
 .logo
 {
-    max-width: 7%;
+    margin-left: 50px;
+    margin-top: 45px;
+    width: 8%;
     height: auto;
-    float: left;
 }
 nav ul
 {
-    list-style-type: none;
     display: flex;
     justify-content: flex-end;
-    padding-bottom: 2em;
+    list-style-type: none;
+    margin-top: 0;
+    margin-right: 50px;
 }
-nav ul li a:hover
+nav ul li
+{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.menuitem
+{
+    padding-top: 40px;
+}
+.menuitem:hover
+{
+    border-top: solid 2px #0065FC; 
+    padding-top: 38px;  
+}
+.menuitem a:hover
+{
+    color: #0065FC;
+}
+.sinscrire
 {
     font-weight: bolder;
 }
-nav ul li a:hover
+.sinscrire a 
+{
+    color: #0065FC;
+}
+.recherche
+{
+    margin-left: 50px;
+}
+.recherche h1
+{
+    font-size: 22px;
+    margin-bottom: 0;
+}
+.recherche p
+{
+    margin-left: 0;
+    margin-bottom: 0;
+}
+.search
+{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    height: 7.5vh;
+    margin-bottom: 2em;
+    border-radius: 17px;
+}
+.mapmarker
+{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    font-size: 1.2em;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px; 
+}
+.searchfield
+{
+    flex-grow: 2;
+    border-top: solid #F2F2F2 1px;
+    border-bottom: solid #F2F2F2 1px;
+    border-left: none;
+    border-right: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: initial;
+    padding-left: 20px;
+}
+.searchbutton
+{ 
+    flex-grow: 1;
+    background-color: #0065FC;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: initial;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+}
+.filter
+{
+    margin-left: 50px;
+}
+.filtres
+{
+    margin-bottom: 2em;
+}
+.filterstitle
+{
+    float: left;
+    margin-right: 1.5em;
+}
+.icontextfilters
+{
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 1em;
+    border-top: solid #F2F2F2 2px;
+    border-right: solid #F2F2F2 2px;
+    border-bottom: solid #F2F2F2 2px;
+    border-left: none;
+    border-radius: 60px;
+    padding: 1em;
+    padding-left: 0em;  
+}
+.icontextfilters:hover
+{
+    background-color: #f1f7ff;
+    transform: scale(1.05);    
+}
+.filtericon
+{
+    background: #DEEBFF;
+    padding: 1em;
+    margin-right: 1em;
+    border-radius: 50%;
+    color: #0065FC;
+}
+.infoicon
+{
+    margin-right: 1.5em;
+    font-size: 0.8em;
+    border: solid #F2F2F2 2px;
+    border-radius: 50%;
+    color: #0065FC;
+    padding: 0.4em 0.6em 0.4em 0.85em ;  
+}
+.icontext 
 {
     display: inline-block;
-    position: relative;
-    color: #0065FC;
-    text-decoration: none;
-}
-nav ul li a:hover
-{
-    content: "";
-    display: block;
-    height: 2px;
-    width: 0px;
-    transition: all .3s; 
-}
-nav ul li a:hover
-{
-    width: fit-content;
-    
-}
-nav ul li a 
-{
-    text-decoration: none;
-    padding-left: 2em;
-    padding-right: 2em;
+    margin-bottom: 40px;
 }
 main
 {
     display: flex;
     justify-content: space-around ;
 }
-container
+.principal
 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.hebergements
+.container
 {
     background-color: #F2F2F2;
     border-radius: 25px;
@@ -73,7 +189,11 @@ container
     border-radius: 25px;
     padding: 1vh;
     margin-bottom: 5vh;
-    box-shadow: 4px 2px 20px rgb(201, 201, 201);
+    box-shadow: 4px 2px 20px rgb(201, 201, 201); 
+}
+.boxhebergements:hover
+{
+    transform: scale(1.05); 
 }
 .imagehebergements
 {
@@ -133,6 +253,11 @@ p
     padding: 1vh;
     margin-bottom: 5vh;
     box-shadow: 4px 2px 20px rgb(201, 201, 201);
+    display:inline-block;
+}
+.boxpopulaires:hover
+{
+    transform: scale(1.05); 
 }
 .imagepopulaires
 {
@@ -152,3 +277,120 @@ p
     right: 50px;
     font-size: 3.5vh;
 }
+
+
+
+
+
+figure
+{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px rgb(230, 230, 230);
+    padding-bottom: 2vh;
+}
+
+
+
+
+
+figure:hover
+{
+    transform: scale(1.05); 
+}
+figcaption
+{
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.activites1
+{
+    display: flex;
+   
+
+    max-width: 50%;
+}
+
+
+
+
+
+
+.activites_1
+{
+    flex-grow: 3;
+    
+}
+.activites_2
+{
+    flex-grow: 2;
+    
+}
+.activites_2
+{
+    flex-grow: 1;
+    
+}
+
+
+
+
+
+
+
+
+
+
+.imageactivites
+{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+
+
+
+
+
+.boxactivites:hover
+{
+    transform: scale(1.05); 
+}
+footer
+{
+    background-color: #F2F2F2;
+    display: flex;
+    font-size: 1em;
+}
+footer h5
+{
+    font-size: inherit;
+    margin-bottom: 1.5em;
+    margin-left: 2.5em;
+}
+footer ul li
+{
+    list-style-type: none;
+    margin-bottom: 1.2em;
+}
+.apropos
+{
+    margin-right: 10%;
+    margin-left: 2%;
+}
+.hebergementsfooter
+{
+    margin-right: 10%;
+    margin-left: 2%;
+}
+.assistance
+{
+    margin-right: 10%;
+    margin-left: 2%;
+}
+
+
