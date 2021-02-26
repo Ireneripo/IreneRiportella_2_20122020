@@ -462,7 +462,7 @@ footer ul li
         height: 17vw;
     }
 }
-@media screen and (max-width: 801px)
+@media screen and (max-width: 800px)
 {
     main 
     {
@@ -490,7 +490,7 @@ footer ul li
     {
         width: 25vw;
     }
-
+    
 }
 
 @media screen and (max-width: 375px)
@@ -561,8 +561,9 @@ footer ul li
     .searchbutton
     {
         position: relative;
-        opacity: 0;
-        width: 50px;
+        opacity: 1;
+        font-family: FontAwesome;
+        
     }
     .loupe
     {
