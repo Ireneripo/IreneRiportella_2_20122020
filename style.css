@@ -86,7 +86,7 @@ nav ul li:hover
 }
 .searchfield
 {
-    min-width: 200px;
+    min-width: 100px;
     border-top: solid #F2F2F2 1px;
     border-bottom: solid #F2F2F2 1px;
     border-left: none;
@@ -98,7 +98,7 @@ nav ul li:hover
 }
 .searchbutton
 { 
-    width: 120px;
+    width: 132px;
     background-color: #0065FC;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
@@ -107,6 +107,23 @@ nav ul li:hover
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border: none;
+    position: relative;
+    cursor: pointer;
+}
+#searchbutton
+{ 
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: initial;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    position: absolute;
+    left: 19em;
+    cursor: pointer; 
 }
 .filter
 {
@@ -410,7 +427,7 @@ footer
 {
     background-color: #F2F2F2;
     display: flex;
-    
+    padding-bottom: 30px;
 }
 footer h5
 {
@@ -443,12 +460,13 @@ footer ul li
     margin-right: 13vw;
     margin-left: 3.5vw;
 }
-@media screen and (max-width: 1440px)
+@media screen and (min-width: 357px) and (max-width: 1440px)
 {
-    .loupe
-    {
-        display: none;
-    }
+  #searchbutton
+  {
+      display: none;
+  }
+
 }
 @media screen and (max-width: 980px)
 {
@@ -491,13 +509,8 @@ footer ul li
         width: 25vw;
     }
 }
-
 @media screen and (max-width: 375px)
 {
-    body 
-    {
-        margin-left: 8px;
-    }
     .logo
     {
         margin-top: 25px;
@@ -524,7 +537,6 @@ footer ul li
         text-align: center;
         width: 100%;
     }
-   
     h1 
     {
         margin-top: 10px;
@@ -550,29 +562,26 @@ footer ul li
     }
     .searchfield
     {
-        width: 100%;
+        width: 75%;
     }
     .searchbutton
     {
-        position: relative;
-        opacity: 1;
-        font-family: FontAwesome;
-        
+        display: none;
     }
-    .loupe
-    {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #0065FC;
-        border-radius: 15px;
-        width: 50px;
-        height: inherit;
-        position: absolute;
-        top: 260px;
-        left: 310px;
-        color: white;
-    }
+   
+
+
+
+    
+
+
+
+
+
+      
+
+
+
     
     .asidepopulaires
     {
