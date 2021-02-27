@@ -114,7 +114,7 @@ nav ul li:hover
 { 
     width: 50px;
     height: 50px;
-    background-color: red;
+    background-color: #0065FC;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: initial;
@@ -460,11 +460,12 @@ footer ul li
     margin-right: 13vw;
     margin-left: 3.5vw;
 }
-@media screen and (min-width: 357px) and (max-width: 1440px)
+@media screen and (min-width: 375px) and (max-width: 5000px)
 {
   #searchbutton
   {
-      display: none;
+    color: transparent;
+    background-color: transparent;
   }
 
 }
@@ -514,7 +515,6 @@ footer ul li
     .logo
     {
         margin-top: 25px;
-
     }
     header
     {
@@ -568,21 +568,18 @@ footer ul li
     {
         display: none;
     }
+    #searchbutton
+    {
+        color: white;
+        background-color: #0065FC;
+    }
+   
    
 
 
 
     
 
-
-
-
-
-      
-
-
-
-    
     .asidepopulaires
     {
         flex-direction: column;
