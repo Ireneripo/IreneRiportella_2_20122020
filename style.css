@@ -23,7 +23,6 @@ header
 nav
 {
     display: flex;
-    min-width: 375px;
 }
 nav ul
 {
@@ -465,7 +464,7 @@ footer ul li
     margin-right: 13vw;
     margin-left: 3.5vw;
 }
-@media screen and (min-width: 414px) and (max-width: 5000px)
+@media screen and (min-width: 500px) and (max-width: 5000px)
 {
   #searchbutton
   {
@@ -515,7 +514,7 @@ footer ul li
         width: 25vw;
     }
 }
-@media screen and (max-width: 414px)
+@media screen and (max-width: 500px)
 {
     *
     {
@@ -535,15 +534,13 @@ footer ul li
     }
     nav ul
     {
-        justify-content: space-around;
-        padding-left: 0;
         margin-right: 0;
-        width: 100%;
+        width: 100vw;
     }
     nav ul li 
     {
         border-bottom: solid 2.5px #F2F2F2;
-        padding-bottom: 10px; 
+        padding-bottom: 15px; 
     }
     .menuitem 
     {
@@ -553,11 +550,6 @@ footer ul li
     h1 
     {
         margin-top: 10px;
-    }
-    nav 
-    {
-        margin-top: 0;
-        padding-top: 0;
     }
     nav ul li:hover
     {
@@ -592,6 +584,30 @@ footer ul li
         width: 100%;
         margin: 0;
     }
+    h2 
+    {
+        margin-left: 3.5vmax;
+        margin-top: 5vmax;
+        margin-bottom: 1vmax;
+        font-size: 3.5vmax;
+    }
+    h4, figcaption
+    {
+        font-size: 2.5vmax;
+    }
+    p 
+    {
+        font-size: 2vmax;
+    }
+    .etoiles, .etoilegrise, .etoilespopulaires
+    {
+        font-size: 3vw;
+    }
+    .etoilespopulaires
+    {
+        margin-top: 60px;
+    }
+    
     .populaires
     {
         border-radius: 0; 
@@ -603,31 +619,51 @@ footer ul li
     .boxpopulaires
     {
         width: 85%;
-        height: 144px;
+        height: 142px;
+        margin-bottom: 5px;
     }
     .container
     {
         background-color: white;
+        margin-top: 10px;
     }
     .boxhebergements
     {
         width: 85%;
         height: 190px;
     }
+    .plusderesultats
+    {
+        font-size: 5vw;
+        margin-left: 20px;
+    }
+    #Activites
+    {
+        width: 100vw;
+        margin: 0;
+    }
+    #Activites h2
+    {
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
     .sectionactivites
     {
         flex-direction: column;
         align-items: center;
         height: auto;
+        margin: 0;
+        margin-bottom: 25px;
+        width: 100%;
     }
     .boxactivites_1
     {
-        width: 100%;
+        width: 85%;
         justify-content: center;
     }
     .boxactivites_2
     {
-        width: 100%;
+        width: 85%;
         align-items: center;
     }
     .boxactivites_a, .boxactivites_b, .boxactivites_c
@@ -635,6 +671,10 @@ footer ul li
         width: 100%;
         height: 190px;
         margin-bottom: 25px;
+    }
+    .imageactivites_a, .imageactivites_b, .imageactivites_c
+    {
+        height: 135px;
     }
     footer 
     {
