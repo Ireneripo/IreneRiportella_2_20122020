@@ -287,7 +287,7 @@ a
 .plusderesultats
 {
     font-weight: bold;
-    font-size: 1.2vw;
+    font-size: 1.2vmax;
     margin-left: 2.8vw;
 }
 .populaires
@@ -518,6 +518,58 @@ footer ul li
         width: 25vw;
     }
 }
+@media screen and (max-width: 700px)
+{
+    #Activites
+    {
+        width: 100vw;
+        margin: 0;
+    }
+    #Activites h2
+    {
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+    .sectionactivites
+    {
+        flex-wrap: wrap;
+        height: auto;
+        margin: 0 30px;
+        margin-bottom: 25px;
+    }
+    .boxactivites_1
+    {
+        
+        width: 33%;
+        
+    }
+    .boxactivites_2
+    {
+       
+        flex-direction: row;
+        width: 66%;
+        
+    }
+    .boxactivites_a, .boxactivites_b, .boxactivites_c
+    {
+        width: 28vw;
+        height: 11rem;
+        margin-bottom: 25px;
+    }
+    .boxactivites_b, .boxactivites_c
+    {
+        flex-direction: row;
+        margin-left: 0.7vw;
+       
+    }
+    .imageactivites_a, .imageactivites_b, .imageactivites_c
+    {
+        height: 135px;
+    }
+}
+
+
+
 @media screen and (max-width: 500px)
 {
     *
@@ -684,6 +736,7 @@ footer ul li
     }
     .boxactivites_2
     {
+        flex-direction: column-reverse;
         width: 85%;
         align-items: center;
     }
