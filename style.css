@@ -14,9 +14,8 @@ header
 }
 .logo
 {
-    margin-left: 3.3vw;
-    margin-top: 3vw;
     float: left;
+    margin: 3vw 3vw 2.5vw 3.3vw;
     width: 100px;
     height: auto;
 }
@@ -34,9 +33,7 @@ nav ul
 nav ul li
 {
     border-top: solid 2.5px transparent;
-    padding-top: 38px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 38px 30px 0 30px;
 }
 nav ul li:hover
 {
@@ -62,7 +59,8 @@ nav ul li:hover
 .recherche h1
 {
     font-size: 22px;
-    margin-bottom: 0;
+    margin-top: 4vw; 
+    clear: left;
 }
 .recherche p
 {
@@ -218,7 +216,7 @@ main
 {
     background-color: #F2F2F2;
     border-radius: 25px;
-    margin-top: 40px;
+    margin-top: 2.5vw;
     width: 67%;
 }
 .boxhebergements
@@ -265,9 +263,8 @@ main
 }
 h2
 {
-    margin-left: 2.8vw;
-    margin-top: 3.3vw;
     font-size: 1.7vmax;
+    margin: 3.3vw 0 1.2vw 2.8vw;
 }
 h4
 {
@@ -298,7 +295,7 @@ a
     background-color: #F2F2F2;
     border-radius: 25px;
     width: 31%;
-    margin-top: 40px;
+    margin-top: 2.5vw;
     padding-bottom: 20px;
     position: relative;
 }
@@ -658,7 +655,7 @@ footer ul li
     }
     .plusderesultats
     {
-        font-size: 5vw;
+        font-size: 18PX;
         margin-left: 20px;
     }
     #Activites
