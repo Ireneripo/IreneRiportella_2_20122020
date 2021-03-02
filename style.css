@@ -518,6 +518,10 @@ footer ul li
     {
         font-size: 2vw;
     }
+    .charticon
+    {
+        font-size: 2vw;
+    }
     .asidepopulaires
     {
         flex-direction: row;
@@ -597,6 +601,10 @@ footer ul li
     .boxpopulaires:nth-child(2) .etoilespopulaires
     {
         margin-top: 7vw;
+    }
+    .populaires
+    {
+        margin-bottom: 20px;
     }
     .boxpopulaires
     {
