@@ -251,7 +251,7 @@ main
 }
 .etoilegrise
 {
-    color: rgb(201, 201, 201);
+    color: rgb(201, 201, 201); 
     font-size: 0.8vw;
 }
 .etoilespopulaires
@@ -329,11 +329,10 @@ a
     border-bottom-left-radius: 15px;
     width: 40%;
     height: 100%;
-   
     object-fit: cover;
     float: left;
     padding-right: 10px;
-    margin-right: 10px;
+    margin-right: 0.8vw;
 }
 .asidepopulaires
 {
@@ -355,9 +354,9 @@ figure:hover
 figcaption
 {
     font-weight: bold;
-    font-size: 1.2vw;
-    margin-left: 1.5em;
-    margin-top: 0.5vw;
+    font-size: 1.2vmax;
+    margin-left: 1.4em;
+    margin-top: 0.3em;
 }
 #Activites h2
 {
@@ -468,6 +467,10 @@ footer ul li
     margin-right: 13vw;
     margin-left: 3.5vw;
 }
+.apropos ul li:hover, .hebergementsfooter ul li:hover, .assistance ul li:hover
+{
+    -webkit-text-stroke: 1px black;
+}
 @media screen and (min-width: 500px) and (max-width: 5000px)
 {
   #searchbutton
@@ -483,10 +486,22 @@ footer ul li
     {
         padding-bottom: 25px;
     }
+    .principal
+    {
+        margin-bottom: 1vw;
+    }
     .boxhebergements
     {
         width: 22vw;
         height: 17vw;
+    }
+    .imagepopulaires
+    {
+        padding-right: 0.6vw;
+    }
+    .plusderesultats
+    {
+        font-size: 1.6vw;
     }
 }
 @media screen and (max-width: 800px)
@@ -499,6 +514,10 @@ footer ul li
     {
         width: 100%; 
     }
+    h2 
+    {
+        font-size: 2vw;
+    }
     .asidepopulaires
     {
         flex-direction: row;
@@ -506,7 +525,7 @@ footer ul li
     }
     .boxpopulaires
     {
-        width: 25vw;
+        width: 28vw;
         height: 12vw;
     }
     .container
@@ -516,10 +535,107 @@ footer ul li
     .boxhebergements
     {
         width: 25vw;
+        height: 20vw;
+    }
+    h4 
+    {
+        font-size: 1.7vw;
+    }
+    .boxhebergements p, .boxpopulaires p 
+    {
+        font-size: 1.4vw;
+    }
+    .etoiles, .etoilegrise
+    {
+        font-size: 1.4vw;
+        margin-top: 10px;
+    }
+    .etoilespopulaires
+    {
+        font-size: 1.4vw;
+        margin-top: 20px;
+    }
+    .imageactivites_a, .imageactivites_b, .imageactivites_c
+    {
+        padding-bottom: 0.2vw;
+    }
+    figcaption
+    {
+        font-size: 1.3vw;
     }
 }
-@media screen and (max-width: 700px)
+@media screen and (min-width: 500px) and (max-width: 700px)
 {
+    .container h2, .populaires h2
+    {
+        font-size: 3.8vw;
+    }
+    .charticon
+    {
+        font-size: 3.8vw;
+    }
+    h4
+    {
+        font-size: 2.6vmax;
+        margin-top: 1vw;
+    }
+    .asidepopulaires
+    {
+       display: flex;
+       flex-direction: column;
+    }
+    .populaires .etoilegrise
+    {
+        font-size: 2.3vw; 
+        margin-top: 3vw;
+    }
+    .etoilespopulaires
+    {
+        font-size: 2.3vw;
+        margin-top: 11vw;
+    }
+    .boxpopulaires:nth-child(2) .etoilespopulaires
+    {
+        margin-top: 7vw;
+    }
+    .boxpopulaires
+    {
+        width: 80vw;
+        height: 25vw;
+    }
+    .imagepopulaires
+    {
+        padding-right: 2vw;
+    }
+    .principal
+    {
+        margin-bottom: 0;
+    }
+    .principal h4
+    {
+        font-size: 2.2vw;
+    }
+    .principal p
+    {
+        font-size: 2vw;
+    }
+    .populaires p 
+    {
+        font-size: 3vw;
+    }
+    .etoiles, .etoilegrise
+    {
+        font-size: 1.8vw;
+    }
+    .boxhebergements
+    {
+        width: 35vw;
+        height: 28vw;
+    }
+    .plusderesultats
+    {
+        font-size: 2vmax;
+    }
     #Activites
     {
         width: 100vw;
@@ -527,7 +643,8 @@ footer ul li
     }
     #Activites h2
     {
-        margin-left: 20px;
+        font-size: 3.8vw;
+        margin-left: 4vw;
         margin-bottom: 30px;
     }
     .sectionactivites
@@ -535,41 +652,50 @@ footer ul li
         flex-wrap: wrap;
         height: auto;
         margin: 0 30px;
-        margin-bottom: 25px;
+        margin-bottom: 2.5vw;
     }
     .boxactivites_1
     {
-        
         width: 33%;
-        
     }
     .boxactivites_2
     {
-       
         flex-direction: row;
         width: 66%;
-        
     }
     .boxactivites_a, .boxactivites_b, .boxactivites_c
     {
         width: 28vw;
-        height: 11rem;
+        height: 24vw;
         margin-bottom: 25px;
     }
     .boxactivites_b, .boxactivites_c
     {
         flex-direction: row;
         margin-left: 0.7vw;
-       
     }
     .imageactivites_a, .imageactivites_b, .imageactivites_c
     {
-        height: 135px;
+        height: 18vw;
+        padding-bottom: 1vw;
+    }
+    figcaption 
+    {
+        font-size: 1.8vw;
+    }
+    footer
+    {
+        padding-top: 3vw;
+    }
+    footer h5 
+    {
+        font-size: 2vw;
+    }
+    footer ul li 
+    {
+        font-size: 1.6vw;
     }
 }
-
-
-
 @media screen and (max-width: 500px)
 {
     *
@@ -655,18 +781,23 @@ footer ul li
         margin: 35px 10px 10px 25px;
         font-size: 3.5vmax;
     }
+    .principal p, .populaires p 
+    {
+        font-size: 3vw;
+    }
     .charticon
     {
         font-size: 3.5vmax;
         margin: 22px 10px 0px 0px;   
     }
-    h4, figcaption
+    h4
     {
         font-size: 2.5vmax;
     }
-    p 
+    figcaption 
     {
-        font-size: 2vmax;
+        font-size: 2.5vmax;
+        margin-top: 2.3vw;
     }
     .etoiles, .etoilegrise, .etoilespopulaires
     {
@@ -690,6 +821,10 @@ footer ul li
         width: 85%;
         height: 142px;
         margin-bottom: 5px;
+    }
+    .imagepopulaires
+    {
+        margin-right: 2.5vw;
     }
     .principal
     {
@@ -736,7 +871,7 @@ footer ul li
     }
     .boxactivites_2
     {
-        flex-direction: column-reverse;
+        flex-direction: column;
         width: 85%;
         align-items: center;
     }
