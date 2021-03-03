@@ -10,18 +10,19 @@ body
 header
 {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 .logo
 {
-    float: left;
-    margin: 3vw 3vw 2.5vw 3.3vw;
+    margin: 3vw 3vw 1.5vw 3.3vw;
     width: 100px;
     height: auto;
 }
 nav
 {
     display: flex;
+    flex-grow: 2;
+    justify-content: flex-end;
 }
 nav ul
 {
@@ -59,7 +60,7 @@ nav ul li:hover
 .recherche h1
 {
     font-size: 22px;
-    margin-top: 4vw; 
+    margin-top: 1vw; 
     clear: left;
 }
 .recherche p
@@ -240,7 +241,8 @@ main
     border-top-right-radius: 15px;
     width: 100%;
     height: 59%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .etoiles
 {
@@ -329,7 +331,8 @@ a
     border-bottom-left-radius: 15px;
     width: 40%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     float: left;
     padding-right: 10px;
     margin-right: 0.8vw;
@@ -409,7 +412,8 @@ figcaption
     width: 100%;
     height: 85%;
     padding-bottom: 10px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .imageactivites_b
 {
@@ -418,7 +422,8 @@ figcaption
     width: 100%;
     height: 70%;
     padding-bottom: 10px;
-    object-fit: cover; 
+    -o-object-fit: cover;
+       object-fit: cover; 
 }
 .imageactivites_c
 {
@@ -427,7 +432,8 @@ figcaption
     width: 100%;
     height: 63%;
     padding-bottom: 10px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 footer
 {
@@ -585,8 +591,8 @@ footer ul li
     }
     .asidepopulaires
     {
-       display: flex;
-       flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
     .populaires .etoilegrise
     {
