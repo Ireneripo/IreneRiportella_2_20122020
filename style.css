@@ -950,20 +950,10 @@ footer ul li {
     font-size: 4.3vw;
   }
 }
-@media screen and (max-width: 400px) {
-  .principal h4,
-  .populaires h4 {
-    font-size: 4.5vw;
-  }
-  .boxpopulaires:nth-child(2) .etoilespopulaires {
-    margin-top: 14vw;
-  }
-}
-@media screen and (max-width: 385px) {
+@media screen and (max-width: 414px) {
   .container h2,
   .populaires h2 {
     margin: 35px 10px 10px 25px;
-    -webkit-font-size: 3.4vmax;
     font-size: 3.4vmax;
   }
   .charticon {
@@ -972,11 +962,13 @@ footer ul li {
   #Activites h2 {
     font-size: 3.4vmax;
   }
+  .boxpopulaires:nth-child(2) .etoilespopulaires {
+    margin-top: 14vw;
+  }
   .boxpopulaires:nth-child(3) .etoilespopulaires {
     margin-top: 15vw;
   }
   figcaption {
-    -webkit-font-size: 2.8vmax;
     font-size: 2.8vmax;
   }
 }
