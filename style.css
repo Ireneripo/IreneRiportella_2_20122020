@@ -963,6 +963,7 @@ footer ul li {
   .container h2,
   .populaires h2 {
     margin: 35px 10px 10px 25px;
+    -webkit-font-size: 3.4vmax;
     font-size: 3.4vmax;
   }
   .charticon {
@@ -975,6 +976,7 @@ footer ul li {
     margin-top: 15vw;
   }
   figcaption {
+    -webkit-font-size: 2.8vmax;
     font-size: 2.8vmax;
   }
 }
