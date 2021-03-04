@@ -2,7 +2,7 @@
   margin: 0;
 }
 html {
-  max-width: 100%;
+  width: 100%;
   -webkit-overflow-x: hidden;
   overflow-x: hidden;
 }
@@ -22,10 +22,12 @@ header {
   width: 100px;
   height: auto;
 }
+.navigationmobile {
+  display: flex;
+}
 nav {
   display: flex;
-  flex-grow: 2;
-  justify-content: flex-end;
+  padding-right: 0;
 }
 nav ul {
   display: flex;
@@ -48,7 +50,7 @@ nav ul li:hover {
   font-size: 16px;
   color: #0065fc;
   float: right;
-  margin-right: 3.3vw;
+  margin-right: 5vw;
   padding-top: 38px;
 }
 .recherche {
@@ -57,6 +59,7 @@ nav ul li:hover {
 .recherche h1 {
   font-size: 22px;
   margin-top: 1vw;
+  margin-right: 20px;
   clear: left;
 }
 .recherche p {
@@ -80,7 +83,7 @@ nav ul li:hover {
   border-bottom-left-radius: 15px;
 }
 .searchfield {
-  width: 235px;
+  width: 12rem;
   border-top: solid #f2f2f2 1px;
   border-bottom: solid #f2f2f2 1px;
   border-left: none;
@@ -114,7 +117,7 @@ nav ul li:hover {
   border-radius: 15px;
   border: none;
   position: absolute;
-  left: 19em;
+  left: 80vw;
   cursor: pointer;
 }
 .filter {
@@ -229,17 +232,17 @@ main {
   font-size: 0.8vw;
 }
 .etoilespopulaires {
+  margin-top: 3vw;
   color: #0065fc;
   font-size: 0.8vw;
   margin-left: 10px;
-  margin-top: 30px;
 }
 h2 {
   font-size: 1.7vmax;
   margin: 3.3vw 0 1.2vw 2.8vw;
 }
 h4 {
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   margin-left: 10px;
   margin-top: 2px;
   padding-bottom: 0;
@@ -475,16 +478,14 @@ footer ul li {
   }
   .boxhebergements p,
   .boxpopulaires p {
-    font-size: 1.4vw;
+    font-size: 1.5vw;
   }
   .etoiles,
   .etoilegrise {
     font-size: 1.4vw;
-    margin-top: 10px;
   }
   .etoilespopulaires {
     font-size: 1.4vw;
-    margin-top: 20px;
   }
   .imageactivites_a,
   .imageactivites_b,
@@ -496,6 +497,9 @@ footer ul li {
   }
 }
 @media screen and (min-width: 500px) and (max-width: 700px) {
+  h1 {
+    padding-top: 20px;
+  }
   .container h2,
   .populaires h2 {
     font-size: 3.8vw;
@@ -503,9 +507,17 @@ footer ul li {
   .charticon {
     font-size: 3.8vw;
   }
-  h4 {
-    font-size: 2.6vmax;
+  .boxpopulaires h4 {
+    font-size: 3vw;
     margin-top: 1vw;
+  }
+  .boxhebergements h4 {
+    font-size: 2.5vw;
+    margin-top: 1vw;
+  }
+  .boxhebergements p,
+  .boxpopulaires p {
+    font-size: 2.5vw;
   }
   .asidepopulaires {
     display: flex;
@@ -520,7 +532,7 @@ footer ul li {
     margin-top: 11vw;
   }
   .boxpopulaires:nth-child(2) .etoilespopulaires {
-    margin-top: 7vw;
+    margin-top: 8vw;
   }
   .populaires {
     margin-bottom: 20px;
@@ -529,20 +541,14 @@ footer ul li {
     width: 80vw;
     height: 25vw;
   }
+  .boxpopulaires p {
+    margin-bottom: 6vw;
+  }
   .imagepopulaires {
     padding-right: 2vw;
   }
   .principal {
     margin-bottom: 0;
-  }
-  .principal h4 {
-    font-size: 2.2vw;
-  }
-  .principal p {
-    font-size: 2vw;
-  }
-  .populaires p {
-    font-size: 3vw;
   }
   .etoiles,
   .etoilegrise {
@@ -608,12 +614,11 @@ footer ul li {
     font-size: 1.6vw;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   * {
     margin: 0;
   }
   html {
-    max-width: 100%;
     -webkit-overflow-x: hidden;
     overflow-x: hidden;
   }
@@ -624,13 +629,17 @@ footer ul li {
   }
   .logo {
     margin-top: 25px;
+    position: absolute;
   }
-  header {
-    flex-wrap: wrap;
+  .navigationmobile {
+    width: 100vw;
+    position: relative;
+    flex-direction: column-reverse;
   }
   nav ul {
-    margin-right: 0;
     width: 100%;
+    padding-left: 0;
+    margin-right: 0;
   }
   nav ul li {
     border-bottom: solid 2.5px #f2f2f2;
@@ -639,9 +648,8 @@ footer ul li {
   .menuitem {
     text-align: center;
     width: 100%;
-  }
-  h1 {
-    margin: 20px 0px 0px 6px;
+    padding-bottom: 15px;
+    padding-top: 25px;
   }
   nav ul li:hover {
     border-bottom: solid 2.5px #0065fc;
@@ -651,15 +659,27 @@ footer ul li {
   .sinscrire {
     margin-right: 25px;
   }
+  .boxpopulaires:nth-child(2) .etoilespopulaires {
+    margin-top: 7.5vw;
+  }
+  h1 {
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    margin: 20px 15px 0px 6px;
+    padding-top: 25px;
+  }
   .recherche p {
     margin: 10px 6px 35px 6px;
   }
   .search {
-    width: 100%;
+    width: 90%;
     margin: 20px 6px 10px 6px;
   }
   .searchfield {
-    width: 75%;
+    width: 80%;
   }
   .searchbutton {
     display: none;
@@ -677,24 +697,29 @@ footer ul li {
     width: 100%;
     margin: 0;
   }
-  h2 {
+  .container h2,
+  .populaires h2 {
     margin: 35px 10px 10px 25px;
-    font-size: 3.5vmax;
+    font-size: 5vmax;
   }
-  .principal p,
   .populaires p {
+    font-size: 3vw;
+    margin-bottom: 0;
+  }
+  .principal p {
     font-size: 3vw;
   }
   .charticon {
-    font-size: 3.5vmax;
+    font-size: 5vmax;
     margin: 22px 10px 0px 0px;
   }
-  h4 {
-    font-size: 2.5vmax;
+  .principal h4,
+  .populaires h4 {
+    font-size: 3.7vw;
   }
   figcaption {
-    font-size: 2.5vmax;
-    margin-top: 2.3vw;
+    font-size: 4vmax;
+    margin-top: 2.5vmax;
   }
   .etoiles,
   .etoilegrise,
@@ -702,11 +727,21 @@ footer ul li {
     font-size: 3vw;
   }
   .etoilespopulaires {
-    margin-top: 55px;
+    font-size: 3vw;
+    margin-top: 15vw;
+  }
+  .populaires .etoilegrise {
+    font-size: 3vw;
+  }
+  .boxpopulaires:nth-child(2) .etoilespopulaires {
+    margin-top: 11vw;
   }
   .populaires {
     border-radius: 0;
     margin-top: 30px;
+  }
+  .boxpopulaires p {
+    margin-bottom: 8vw;
   }
   .asidepopulaires {
     flex-direction: column;
@@ -739,6 +774,7 @@ footer ul li {
     margin: 0;
   }
   #Activites h2 {
+    font-size: 5vmax;
     margin-left: 20px;
     margin-bottom: 30px;
   }
@@ -789,5 +825,49 @@ footer ul li {
   .assistance {
     margin-left: 30px;
     margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .boxpopulaires:nth-child(3) .etoilespopulaires {
+    margin-top: 11vw;
+  }
+  .principal h4,
+  .populaires h4 {
+    font-size: 4.3vw;
+  }
+}
+@media screen and (max-width: 400px) {
+  .principal h4,
+  .populaires h4 {
+    font-size: 4.5vw;
+  }
+  .boxpopulaires:nth-child(2) .etoilespopulaires {
+    margin-top: 14vw;
+  }
+}
+@media screen and (max-width: 375px) {
+  .boxpopulaires:nth-child(3) .etoilespopulaires {
+    margin-top: 15vw;
+  }
+}
+@media screen and (max-width: 350px) {
+  .principal h4,
+  .populaires h4 {
+    font-size: 5.2vw;
+  }
+  .principal p,
+  .populaires p {
+    font-size: 4vw;
+  }
+  .etoiles,
+  .etoilegrise,
+  .etoilespopulaires {
+    font-size: 4vw;
+  }
+  .etoilespopulaires {
+    font-size: 4vw;
+  }
+  .populaires .etoilegrise {
+    font-size: 4vw;
   }
 }
