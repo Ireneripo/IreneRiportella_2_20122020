@@ -846,8 +846,22 @@ footer ul li {
   }
 }
 @media screen and (max-width: 375px) {
+  .container h2,
+  .populaires h2 {
+    margin: 35px 10px 10px 25px;
+    font-size: 3.4vmax;
+  }
+  .charticon {
+    font-size: 3.4vmax;
+  }
+  #Activites h2 {
+    font-size: 3.4vmax;
+  }
   .boxpopulaires:nth-child(3) .etoilespopulaires {
     margin-top: 15vw;
+  }
+  figcaption {
+    font-size: 2.8vmax;
   }
 }
 @media screen and (max-width: 350px) {
