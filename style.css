@@ -978,13 +978,13 @@ footer ul li {
   .container h2,
   .populaires h2 {
     margin: 35px 10px 10px 25px;
-    font-size: 5.5vmax;
+    font-size: 5vmax;
   }
   #Activites h2 {
-    font-size: 5.5vmax;
+    font-size: 5vmax;
   }
   .charticon {
-    font-size: 5.5vmax;
+    font-size: 5vmax;
   }
   .principal h4,
   .populaires h4 {
@@ -1004,8 +1004,5 @@ footer ul li {
   }
   .populaires .etoilegrise {
     font-size: 4vw;
-  }
-  figcaption {
-    font-size: 4vmax;
   }
 }
