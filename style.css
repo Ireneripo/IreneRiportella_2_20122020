@@ -975,6 +975,17 @@ footer ul li {
   }
 }
 @media screen and (max-width: 350px) {
+  .container h2,
+  .populaires h2 {
+    margin: 35px 10px 10px 25px;
+    font-size: 5.5vmax;
+  }
+  #Activites h2 {
+    font-size: 5.5vmax;
+  }
+  .charticon {
+    font-size: 5.5vmax;
+  }
   .principal h4,
   .populaires h4 {
     font-size: 5.2vw;
