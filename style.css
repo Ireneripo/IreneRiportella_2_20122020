@@ -955,13 +955,13 @@ footer ul li {
   .container h2,
   .populaires h2 {
     margin: 35px 10px 10px 25px;
-    font-size: 3.4vmax;
+    font-size: 3.2vmax;
   }
   .charticon {
-    font-size: 3.4vmax;
+    font-size: 3.2vmax;
   }
   #Activites h2 {
-    font-size: 3.4vmax;
+    font-size: 3.2vmax;
   }
   .boxpopulaires:nth-child(2) .etoilespopulaires {
     margin-top: 14vw;
@@ -979,13 +979,13 @@ footer ul li {
   .container h2,
   .populaires h2 {
     margin: 35px 10px 10px 25px;
-    font-size: 5vmax;
+    font-size: 3.5vmax;
   }
   #Activites h2 {
-    font-size: 5vmax;
+    font-size: 3.5vmax;
   }
   .charticon {
-    font-size: 5vmax;
+    font-size: 3.5vmax;
   }
   .principal h4,
   .populaires h4 {
