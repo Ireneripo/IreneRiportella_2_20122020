@@ -797,7 +797,7 @@ footer ul li {
   .container h2,
   .populaires h2 {
     margin: 35px 10px 10px 25px;
-    font-size: 5vmax;
+    font-size: 4.5vmax;
   }
   .populaires p {
     font-size: 3vw;
@@ -807,7 +807,7 @@ footer ul li {
     font-size: 3vw;
   }
   .charticon {
-    font-size: 5vmax;
+    font-size: 4.5vmax;
     margin: 22px 10px 0px 0px;
   }
   .principal h4,
@@ -815,7 +815,7 @@ footer ul li {
     font-size: 3.7vw;
   }
   figcaption {
-    font-size: 4vmax;
+    font-size: 3vmax;
     margin-top: 2.5vmax;
   }
   .etoiles,
