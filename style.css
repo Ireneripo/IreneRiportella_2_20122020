@@ -845,7 +845,7 @@ footer ul li {
     margin-top: 14vw;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 385px) {
   .container h2,
   .populaires h2 {
     margin: 35px 10px 10px 25px;
